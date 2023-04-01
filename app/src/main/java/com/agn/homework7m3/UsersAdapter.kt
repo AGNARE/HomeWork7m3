@@ -9,6 +9,8 @@ class UsersAdapter(
     var arrayListUsers: ArrayList<UsersModel>
 ) : RecyclerView.Adapter<UsersAdapter.UsersViewHolder>() {
 
+//    lateinit var arrayListForAdapter: ArrayList<UsersModel>
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UsersViewHolder {
         return UsersViewHolder(ItemUsersBinding.inflate(LayoutInflater.from(parent.context)))
     }

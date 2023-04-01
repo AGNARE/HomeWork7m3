@@ -15,12 +15,8 @@ class MainActivity : AppCompatActivity() {
             binding = ActivityMainBinding.inflate(layoutInflater)
             setContentView(binding.root)
             fillRecicler()
-//        conected()
+            binding.reciclerView.adapter = adapter
         }
-
-//    private fun conected() {
-//        adapter = UsersAdapter(arrayList)
-//    }
 
         private fun fillRecicler() {
             arrayList.add(UsersModel("Victor",34,R.drawable.person_first_img))
