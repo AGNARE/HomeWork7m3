@@ -9,8 +9,6 @@ class UsersAdapter(
     var arrayListUsers: ArrayList<UsersModel>
 ) : RecyclerView.Adapter<UsersAdapter.UsersViewHolder>() {
 
-//    lateinit var arrayListForAdapter: ArrayList<UsersModel>
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UsersViewHolder {
         return UsersViewHolder(ItemUsersBinding.inflate(LayoutInflater.from(parent.context)))
     }
@@ -29,6 +27,5 @@ class UsersAdapter(
             binding.textView.text = users.name + " " + users.age.toString()
             binding.imageUser.setImageResource(users.img)
         }
-
     }
 }
